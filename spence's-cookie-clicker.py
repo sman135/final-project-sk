@@ -9,8 +9,6 @@ import tkinter as tk
 import sys
 #Constants
 root = tkinter.Tk()
-image2 =Image.open()
-image1 = Imageroot.PhotoImage(image2)
 root.geometry("500x500+10+20")
 root.title("Cookie Clicker Version 0.9")
 root.maxsize(500, 500)
