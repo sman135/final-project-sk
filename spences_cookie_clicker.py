@@ -1,8 +1,3 @@
-'''
-Spence's Cookie Clicker
-Spencer Kolman
-Computer science
-'''
 #Imports
 import tkinter
 import sys
@@ -45,7 +40,7 @@ def prestige(): #Resets cookies to 0 but default click is increased by 5
         clickValue = 0
         clickValue += 5 * prestigeLevel
         btn5.configure(bg = 'Wheat')
-        counter.set(counter.get() - 250)
+        counter.set(0)
         btn3['state'] = 'normal'
         btn4['state'] = 'normal'
 #Labels
@@ -56,7 +51,7 @@ lbl4 = tkinter.Label(root, text = 'Click value X2', fg = 'black', font = ('Arial
 lbl5 = tkinter.Label(root, text = '50 points', fg = 'black', font = ('Arial', 9), bg = 'Wheat')
 lbl6 = tkinter.Label(root, text = 'Click value X3', fg = 'black', font = ('Arial', 9), bg = 'Wheat')
 lbl7 = tkinter.Label(root, text = '150 points', fg = 'black', font = ('Arial', 9), bg = 'Wheat')
-lbl8 = tkinter.Label(root, text = 'Prestige (default click\n increased by 5)', fg = 'black', font = ('Arial', 9), bg = 'Wheat')
+lbl8 = tkinter.Label(root, text = 'Prestige \n(Cookies reset to 0\n but default click\n increased by 5)', fg = 'black', font = ('Arial', 9), bg = 'Wheat')
 lbl9 = tkinter.Label(root, text = '250 points', fg = 'black', font = ('Arial', 9), bg = 'Wheat')
 lbl1.place(x = 140, y = 25)
 lbl2.place(x = 270, y = 53)
@@ -65,7 +60,7 @@ lbl4.place(x = 380, y = 205)
 lbl5.place(x = 450, y = 225)
 lbl6.place(x = 380, y = 255)
 lbl7.place(x = 450, y = 275)
-lbl8.place(x = 349, y = 305)
+lbl8.place(x = 360, y = 290)
 lbl9.place(x = 450, y = 325)
 #Buttons
 btn1 = tkinter.Button(root, text = 'Click me!', command = mainClick, fg = 'blue', highlightbackground = 'Wheat') #When clicked adds current point value to counter.
