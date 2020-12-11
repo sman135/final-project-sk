@@ -1,7 +1,6 @@
 #Imports
 import tkinter
 import sys
-import time
 #Constants
 root = tkinter.Tk()
 root.geometry('500x500+10+20')
